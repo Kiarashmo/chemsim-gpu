@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Build artifacts
+build/
+*.o
+*.obj
+
+# Claude / AI-agent files, kept out of the repo
+.claude/
+CLAUDE.md
+AGENTS.md
+.cursor/
+.aider*
+.agent/
+*.agent
+
+# Proposal and course-criteria slides, kept local only
+docs/
+
+# Large or reproducible data (regenerate with preprocessing/)
+data/*
+!data/example.smi
+
+# Raw profiler traces (the plots in results/ tell the story)
+results/*.nsys-rep
+results/*.sqlite
+*.ncu-rep
+
+# Python caches
+__pycache__/
+*.pyc

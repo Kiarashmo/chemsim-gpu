@@ -1,0 +1,49 @@
+n,nbits,stage,name,min_ms,avg_ms,gcups
+1024,1024,1,"naive (AoS, manual popcount)",0.141,0.143,7.42
+1024,1024,2,bit-packed + __popcll (AoS),0.142,0.143,7.38
+1024,1024,3,memory coalescing (SoA),0.03,0.03,35.31
+1024,1024,4,shared-memory tiling,0.027,0.028,38.24
+1024,1024,5,thread coarsening / register blocking,0.042,0.043,24.98
+1024,1024,6,warp-shuffle reduction,0.332,0.332,3.16
+2048,1024,1,"naive (AoS, manual popcount)",0.551,0.552,7.61
+2048,1024,2,bit-packed + __popcll (AoS),0.551,0.552,7.61
+2048,1024,3,memory coalescing (SoA),0.108,0.109,38.76
+2048,1024,4,shared-memory tiling,0.097,0.098,43.12
+2048,1024,5,thread coarsening / register blocking,0.154,0.155,27.31
+2048,1024,6,warp-shuffle reduction,1.316,1.317,3.19
+4096,1024,1,"naive (AoS, manual popcount)",2.192,2.194,7.65
+4096,1024,2,bit-packed + __popcll (AoS),2.192,2.194,7.65
+4096,1024,3,memory coalescing (SoA),0.418,0.418,40.18
+4096,1024,4,shared-memory tiling,0.376,0.376,44.67
+4096,1024,5,thread coarsening / register blocking,0.594,0.595,28.25
+4096,1024,6,warp-shuffle reduction,4.608,5.145,3.64
+8192,1024,1,"naive (AoS, manual popcount)",7.541,7.564,8.9
+8192,1024,2,bit-packed + __popcll (AoS),7.59,7.591,8.84
+8192,1024,3,memory coalescing (SoA),1.492,1.552,44.99
+8192,1024,4,shared-memory tiling,1.556,1.557,43.12
+8192,1024,5,thread coarsening / register blocking,2.238,2.377,29.98
+8192,1024,6,warp-shuffle reduction,18.474,18.514,3.63
+1024,2048,1,"naive (AoS, manual popcount)",0.243,0.244,4.31
+1024,2048,2,bit-packed + __popcll (AoS),0.244,0.244,4.3
+1024,2048,3,memory coalescing (SoA),0.046,0.047,22.76
+1024,2048,4,shared-memory tiling,0.041,0.042,25.6
+1024,2048,5,thread coarsening / register blocking,0.067,0.068,15.6
+1024,2048,6,warp-shuffle reduction,0.276,0.277,3.79
+2048,2048,1,"naive (AoS, manual popcount)",0.944,0.945,4.44
+2048,2048,2,bit-packed + __popcll (AoS),0.944,0.945,4.44
+2048,2048,3,memory coalescing (SoA),0.17,0.172,24.68
+2048,2048,4,shared-memory tiling,0.15,0.151,28.05
+2048,2048,5,thread coarsening / register blocking,0.253,0.254,16.58
+2048,2048,6,warp-shuffle reduction,1.1,1.143,3.81
+4096,2048,1,"naive (AoS, manual popcount)",3.762,3.764,4.46
+4096,2048,2,bit-packed + __popcll (AoS),3.763,3.766,4.46
+4096,2048,3,memory coalescing (SoA),0.659,0.661,25.45
+4096,2048,4,shared-memory tiling,0.579,0.582,28.96
+4096,2048,5,thread coarsening / register blocking,1.212,1.213,13.84
+4096,2048,6,warp-shuffle reduction,4.516,4.562,3.71
+8192,2048,1,"naive (AoS, manual popcount)",15.029,15.033,4.47
+8192,2048,2,bit-packed + __popcll (AoS),15.028,15.04,4.47
+8192,2048,3,memory coalescing (SoA),2.626,2.939,25.56
+8192,2048,4,shared-memory tiling,2.754,2.809,24.37
+8192,2048,5,thread coarsening / register blocking,4.112,4.3,16.32
+8192,2048,6,warp-shuffle reduction,17.998,18.001,3.73
