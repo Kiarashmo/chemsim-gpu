@@ -4,8 +4,8 @@
 #   make test       # build + run the host-only CPU tests (needs only g++/clang++)
 #   make clean
 #
-# On a vast.ai CUDA instance, `make` is all you need. On a machine without a
-# GPU (e.g. a laptop), `make test` still builds and runs the correctness tests.
+# On a machine with an NVIDIA GPU, `make` is all you need. On a machine without
+# a GPU (e.g. a laptop), `make test` still builds and runs the correctness tests.
 
 NVCC     ?= nvcc
 CXX      ?= c++

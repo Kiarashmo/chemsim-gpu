@@ -6,17 +6,13 @@ build/
 *.o
 *.obj
 
-# Claude / AI-agent files, kept out of the repo
-.claude/
-CLAUDE.md
-AGENTS.md
-.cursor/
-.aider*
-.agent/
-*.agent
+# Editor / OS cruft
+.vscode/
+.idea/
 
-# Proposal and course-criteria slides, kept local only
+# Local docs (proposal, slides) and the poster (separate deliverable)
 docs/
+poster/
 
 # Large or reproducible data (regenerate with preprocessing/)
 data/*

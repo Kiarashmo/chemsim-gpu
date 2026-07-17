@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-shot setup for a fresh vast.ai (or any Linux+CUDA) box.
+# One-shot setup for a fresh Linux + CUDA box.
 # Generates fingerprints from data/lib.smi, builds the engine, and validates.
 #
 #   bash setup.sh [SM] [NBITS]

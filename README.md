@@ -40,7 +40,7 @@ Each stage is a separate kernel you can pick at run time.
 
 ## Build
 
-On a Linux box with an NVIDIA GPU (for example a vast.ai instance):
+On a Linux box with an NVIDIA GPU:
 
 ```bash
 # set SM to your GPU: T4=75, RTX 3080/3090=86, RTX 4090=89, A100=80, L4=89
@@ -114,8 +114,8 @@ nsys profile -o streams ./build/chemsim --lib data/lib.fps --stage 3 --stream 4
 ```
 
 Nsight Compute (`ncu`) gives occupancy and memory vs compute throughput per
-stage. Note: some rented cloud hosts block the GPU performance counters, so
-`ncu` may fail there. Nsight Systems (`nsys`) shows the stream overlap timeline
+stage. Note: some shared or managed hosts restrict the GPU performance
+counters, so `ncu` may fail there. Nsight Systems (`nsys`) shows the timeline
 and does not need those counters.
 
 ## Notes
