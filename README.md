@@ -5,9 +5,6 @@ fingerprints. It is built as a step by step optimization study: start with a
 simple, correct GPU kernel, then improve it one technique at a time and measure
 the speedup at each step.
 
-The proposal and the course slides are in `docs/` (kept on your machine, not
-pushed to git).
-
 ## Folder layout
 
 ```
