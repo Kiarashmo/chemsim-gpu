@@ -25,10 +25,10 @@ TU_DARK = "#222222"
 TU_GREY = "#6E6E6E"
 TU_LINE = "#D2D2D2"
 
-# Stage colours: baselines in grey, the coalescing win in TU red, the rest in a
-# muted red/amber/dark family so the whole plot stays on-brand (no rainbow).
-STAGE_COLORS = {1: "#B4B4B4", 2: "#7C7C7C", 3: TU_RED,
-                4: "#7A0A13", 5: "#E08A00", 6: TU_DARK}
+# Stage colours: baselines in grey, the coalescing win in TU red, then a small
+# distinct set (amber, blue) so no two stages read alike, ending near-black.
+STAGE_COLORS = {1: "#B4B4B4", 2: "#6E6E6E", 3: TU_RED,
+                4: "#E58A00", 5: "#2E7EB0", 6: TU_DARK}
 
 
 def setup_theme():
