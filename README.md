@@ -127,3 +127,9 @@ and does not need those counters.
   computed. For libraries bigger than GPU memory you would combine `--stream`
   with per-row selection on the GPU.
 - `.fps` files are little-endian. The format is defined in `include/fingerprint.hpp`.
+
+## Poster
+
+![ChemSim-GPU poster](poster/poster.png)
+
+Built with XeLaTeX from `poster/poster.tex`. PDF: `poster/poster.pdf`.

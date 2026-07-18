@@ -10,9 +10,15 @@ build/
 .vscode/
 .idea/
 
-# Local docs (proposal, slides) and the poster (separate deliverable)
+# Local docs (proposal, slides)
 docs/
-poster/
+
+# Poster: keep sources + built PDF/PNG, drop LaTeX build artifacts
+poster/*.aux
+poster/*.log
+poster/*.out
+poster/*.synctex.gz
+poster/qa/
 
 # Large or reproducible data (regenerate with preprocessing/)
 data/*
